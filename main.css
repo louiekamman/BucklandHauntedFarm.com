@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'CastleDracustein';
+    src: url('./fonts/Castle_Dracustein.ttf');
+}
+
+@font-face {
+    font-family: 'ZombieHolocaust';
+    src: url('./fonts/Zombie_Holocaust.ttf');
+}
+
+_header {
+    background-color: black;
+    opacity: 90%;
+}
+
+body {
+    background-color: black !important;
+    background-image: url('./img/back1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto 100%;
+    background-position: center;
+    color: darkgray !important;
+}
+
+a, a:link, a:visited {
+    color: darkgrey;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00004B;
+}
+
+.container {
+    max-width: 1140px !important;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.section {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.section_head {
+    font-family: 'ZombieHolocaust';
+    color: #175aa0;
+    font-size: 30pt;
+}
+
+.bg-dark {
+    background-color: black !important;
+    opacity: 90%;
+}
+
+.menu_option {
+    font-family: 'CastleDracustein';
+    font-size: 25pt;
+    padding: 0 25px 0 25px;
+    font-weight:bold;
+}
+
+.menu_option a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.menu_option a:hover {
+    color: white;
+    text-shadow: 3px 3px #5a0000;
+}
+
+.logo-header {
+    text-align: center;
+    margin: 100px auto;
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}
+
+.carousel>.carousel-inner>.carousel-item>img {
+    width: 100%;
+}
+
+#cal {
+    width: 100%;
+    color: black;
+}
+
+#cal_head {
+    font-family: 'CastleDracustein';
+    color: #715446;
+}
+
+#cal th {
+    color: white;
+    text-align: center;
+}
+
+#cal td {
+    padding: 5px;
+    text-align: right;
+    border-radius: 10px;
+    border: 4px solid;
+    font-family: 'CastleDracustein';
+    font-size: 15pt;
+}
+
+.cal_open {
+    background-color: #5a0000;
+}
+
+.cal_open_short {
+    background-color: lightgoldenrodyellow;
+}
+.cal_open_num {
+    color: #91705b;
+}
+
+.cal_closed {
+    background-color: #333333;
+    opacity: 50%;
+}
+
