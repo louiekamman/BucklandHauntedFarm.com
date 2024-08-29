@@ -1,3 +1,12 @@
+body {
+    background-color: black !important;
+    background-image: url('./img/pealing_background.jpg');
+    /*background-image: url('./img/stone_background.jpg');*/
+    background-size: cover;
+    color: darkgray !important;
+}
+
+/*
 @font-face {
     font-family: 'CastleDracustein';
     src: url('./fonts/Castle_Dracustein.ttf');
@@ -13,15 +22,7 @@ _header {
     opacity: 90%;
 }
 
-body {
-    background-color: black !important;
-    background-image: url('./img/back1.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: auto 100%;
-    background-position: center;
-    color: darkgray !important;
-}
+
 
 a, a:link, a:visited {
     color: darkgrey;
@@ -126,4 +127,4 @@ a:hover {
     background-color: #333333;
     opacity: 50%;
 }
-
+*/
