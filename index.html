@@ -132,85 +132,9 @@
                 </div>
                 <div class="col-md-4">
                     <div id="date_time" class="section">
-                        <h2 class="section_head"><i class="fa-regular fa-calendar-days"></i> Calendar</h2>
-                        <div style="text-align: center;">
-                            <h1 id="cal_head">OCTOBER ⋅ 2024</h1>
-                        </div>
-                        <table id="cal">
-                            <tr>
-                                <th>Sun</th>
-                                <th>Mon</th>
-                                <th>Tue</th>
-                                <th>Wed</th>
-                                <th>Thu</th>
-                                <th>Fri</th>
-                                <th>Sat</th>
-                            </tr>
-                            <tr>
-                                <td class="cal_closed" title="Closed"></td>
-                                <td class="cal_closed" title="Closed"></td>
-                                <td class="cal_closed" title="Closed">1</td>
-                                <td class="cal_closed" title="Closed">2</td>
-                                <td class="cal_closed" title="Closed">3</td>
-                                <td class="cal_open" title="Open 7-11pm"><span class="cal_open_num">4</span></td>
-                                <td class="cal_open" title="Open 7-11pm"><span class="cal_open_num">5</span></td>
-                            </tr>
-                            <tr>
-                                <td class="cal_closed" title="Closed">6</td>
-                                <td class="cal_closed" title="Closed">7</td>
-                                <td class="cal_closed" title="Closed">8</td>
-                                <td class="cal_closed" title="Closed">9</td>
-                                <td class="cal_closed" title="Closed">10</td>
-                                <td class="cal_open" title="Open 7-11pm"><span class="cal_open_num">11</span></td>
-                                <td class="cal_open" title="Open 7-11pm"><span class="cal_open_num">12</span></td>
-                            </tr>
-                            <tr>
-                                <td class="cal_open_short" title="Open 7-9pm"><span class="cal_open_num">13</span>
-                                </td>
-                                <td class="cal_closed" title="Closed">14</td>
-                                <td class="cal_closed" title="Closed">15</td>
-                                <td class="cal_closed" title="Closed">16</td>
-                                <td class="cal_closed" title="Closed">17</td>
-                                <td class="cal_open" title="Open 7-11pm"><span class="cal_open_num">18</span></td>
-                                <td class="cal_open" title="Open 7-11pm"><span class="cal_open_num">19</span></td>
-                            </tr>
-                            <tr>
-                                <td class="cal_closed" title="Closed">20</td>
-                                <td class="cal_closed" title="Closed">21</td>
-                                <td class="cal_closed" title="Closed">22</td>
-                                <td class="cal_closed" title="Closed">23</td>
-                                <td class="cal_closed" title="Closed">24</td>
-                                <td class="cal_open" title="Open 7-11pm"><span class="cal_open_num">25</span></td>
-                                <td class="cal_open" title="Open 7-11pm"><span class="cal_open_num">26</span></td>
-                            </tr>
-                            <tr>
-                                <td class="cal_closed" title="Closed">27</td>
-                                <td class="cal_closed" title="Closed">28</td>
-                                <td class="cal_closed" title="Closed">29</td>
-                                <td class="cal_closed" title="Closed">30</td>
-                                <td class="cal_open_short" title="Open 7-9pm"><span class="cal_open_num">31</span>
-                                </td>
-                                <td class="cal_closed" title="Closed"></td>
-                                <td class="cal_closed" title="Closed"></td>
-                            </tr>
-                        </table>
+                        <div id="incCalendar"></div>
                         <div class="row">&nbsp;</div>
-                        <div class="row">
-                            <h2 class="section_head"><i class="fa-solid fa-ticket"></i> Admission</h2>
-                        </div>
-                        <div>
-                            <ul>
-                                <li>Open every Friday & Saturday in October</li>
-                                <li>General Admission Price: $20</li>
-                                <li><i class="fa-solid fa-square" style="color:#5a0000"></i> Hours (Fri & Sat): 7-11pm,
-                                    last ticket sold at 10:30pm</li>
-                                <li><i class="fa-solid fa-square" style="color:lightgoldenrodyellow"></i> Hours (Select
-                                    Thur & Sun): 7-9pm, last ticket sold at 8:30pm</li>
-                                <li>Ticket sales are cash or credit</li>
-                                <li>There are NO presale tickets</li>
-                                <li>Tickets are sold in the market when you get here</li>
-                            </ul>
-                        </div>
+                        <div id="incAdmission"></div>
                     </div>
                 </div>
             </div>
@@ -267,8 +191,9 @@
 </html>
 
 <script>
-    //  $(document).ready(function () {
-    //      $('.carousel').carousel({
-    //      })
-    //  });
+    $(document).ready(function () {
+        $('#incCalendar').load("_calendar.html");
+        $('#incAdmission').load("_admission.html");
+        //$('.carousel').carousel({})
+    });
 </script>
