@@ -32,6 +32,12 @@ a:hover {
     color: #00004B;
 }
 
+.text_head {
+    _font-family: 'CastleDracustein';
+    font-size: 15pt;
+    color: white;
+}
+
 .container {
     max-width: 1140px !important;
     padding-right: 15px;
