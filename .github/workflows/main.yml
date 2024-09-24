@@ -10,4 +10,4 @@ jobs:
         with:
           server: ftp.bucklandhauntedfarm.com
           username: louie@bucklandhauntedfarm.com
-          password: fOou#G4+x8Yb
+          password: ${{ secrets.ftp_password }}
