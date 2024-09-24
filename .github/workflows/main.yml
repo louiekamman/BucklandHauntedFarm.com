@@ -1,0 +1,13 @@
+on: push
+name: Deploy website on push
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ftp.bucklandhauntedfarm.com
+          username: louie@bucklandhauntedfarm.com
+          password: fOou#G4+x8Yb
