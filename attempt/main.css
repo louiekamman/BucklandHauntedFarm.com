@@ -1,9 +1,28 @@
 body {
     background-color: black !important;
-    background-image: url('./img/pealing_background.jpg');
+    background-image: url('./img/layout/seamless-bg-grey-offcenter.jpg');
+    /*background-image: url('./img/pealing_background.jpg');*/
     /*background-image: url('./img/stone_background.jpg');*/
     background-size: cover;
     color: darkgray !important;
+}
+
+.header-top {
+    background-color: #cf3f02; 
+    color: white; 
+    padding: 10px; 
+    margin-top: 16px; 
+    text-align: center;
+    font-family: Oswald, Helvetica, Arial, sans-serif;
+    font-size: 23px;
+}
+
+.header-top:after {
+    background: url('.img/layout/desktop-heading.svg') no-repeat;
+    background-size: 100% 100%;
+    bottom: -15px;
+    height: 45px;
+    width: 100%;
 }
 
 .side_tab {
@@ -11,7 +30,7 @@ body {
     background-image: url('./img/1873071.jpg');
     background-size: contain;
     color: white;
-    width: 130px;
+    width: 110px;
     text-align: center;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -23,6 +42,20 @@ body {
     background-image: linear-gradient(to bottom right, orange, transparent);
     cursor: pointer;
 }
+
+.yt-embed-holder {
+    width:100%;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    _pointer-events: none;
+}
+
+.yt-embed-holder iframe {
+    width: 300%;
+    height: 100%;
+    margin-left: -100%;
+}   
+
 
 /*
 @font-face {
