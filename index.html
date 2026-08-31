@@ -1,863 +1,1216 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="An unforgettable Halloween experience. Haunted attractions, live entertainment, food, drinks and more.">
+<meta name="description"
+    content="Buckland Haunted Farm in Warrenton, Virginia. Experience the Haunted Trail and Inflatable Maze every Friday and Saturday night in October.">
 
-    <title>Buckland Hunted Farm | The Ultimate Halloween Experience</title>
+<meta name="theme-color" content="#080808">
 
-    <link rel="stylesheet" href="css/site.css">
+<title>Buckland Haunted Farm | Fear the Farm</title>
+
+<link rel="stylesheet" href="css/site.css">
+```
+
 </head>
 
 <body>
 
-    <!-- ============================================
-         HEADER
-         ============================================ -->
-    <header>
+```
+<!-- ============================================
+     HEADER
+     ============================================ -->
 
-        <!-- Promotional banner -->
-        <div class="promo-bar">
-            <p>
-                Plan early and #Fear The Farm!
-            </p>
-        </div>
+<header>
 
-        <!-- Main navigation -->
-        <nav class="main-navigation">
+    <div class="promo-bar">
+        <p>
+            2026 Season — Every Friday &amp; Saturday Night in October
+        </p>
+    </div>
 
-            <a href="index.html" class="logo">
-                <img src="images/general/logo_new.png" alt="Buckland Hunted Farm logo" style="height: 75px;">
+
+    <nav class="main-navigation">
+
+        <a href="index.html" class="logo" aria-label="Buckland Haunted Farm home">
+            <img src="images/general/logo_new.png"
+                alt="Buckland Haunted Farm"
+                style="height: 75px;">
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="#attractions">
+                Attractions
             </a>
 
+            <a href="#dates">
+                2026 Season
+            </a>
 
-            <div class="nav-links">
+            <a href="#market">
+                Farm Market
+            </a>
+
+            <a href="#visit">
+                Plan Your Visit
+            </a>
+
+            <a href="#contact">
+                Find Us
+            </a>
+
+        </div>
+
+
+        <div class="nav-actions">
+
+            <a href="#visit" class="visit-button">
+                Plan Your Visit
+            </a>
+
+            <button class="menu-button"
+                type="button"
+                aria-label="Open menu"
+                aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ============================================
+         MOBILE NAVIGATION
+         ============================================ -->
+
+    <div class="mobile-menu">
+
+        <div class="mobile-menu-inner">
+
+            <p class="mobile-menu-label">
+                Navigation
+            </p>
+
+
+            <nav>
 
                 <a href="#attractions">
                     Attractions
                 </a>
 
-                <a href="#experience">
-                    Experience
+                <a href="#dates">
+                    2026 Season
                 </a>
 
-                <a href="#dates">
-                    Dates & Times
+                <a href="#market">
+                    Farm Market
                 </a>
 
                 <a href="#groups">
                     Groups
                 </a>
 
+                <a href="#visit">
+                    Plan Your Visit
+                </a>
+
                 <a href="#contact">
-                    Contact
+                    Find Us
                 </a>
 
-            </div>
+            </nav>
 
 
-            <div class="nav-actions">
+            <a href="#visit" class="mobile-visit-button">
+                Plan Your Visit →
+            </a>
 
-                <a href="#tickets" class="book-button">
-                    Book Now
-                </a>
+        </div>
 
-                <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+    </div>
 
-            </div>
-
-        </nav>
+</header>
 
 
-        <!-- ============================================
-     MOBILE NAVIGATION
+
+<!-- ============================================
+     MAIN CONTENT
      ============================================ -->
 
-        <div class="mobile-menu">
+<main>
 
-            <div class="mobile-menu-inner">
 
-                <p class="mobile-menu-label">
-                    Navigation
-                </p>
+    <!-- ========================================
+         HERO
+         ======================================== -->
 
-                <nav>
+    <section class="hero">
 
-                    <a href="#attractions">
-                        Attractions
-                    </a>
+        <video class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="images/hero/hero.jpg">
 
-                    <a href="#experience">
-                        Experience
-                    </a>
+            <source src="video/hero.mp4" type="video/mp4">
 
-                    <a href="#dates">
-                        Dates & Times
-                    </a>
+        </video>
 
-                    <a href="#groups">
-                        Groups
-                    </a>
 
-                    <a href="#contact">
-                        Contact
-                    </a>
+        <div class="hero-overlay"></div>
 
-                </nav>
 
+        <div class="hero-content">
 
-                <a href="#tickets" class="mobile-book-button">
-                    Book Tickets →
-                </a>
-
-            </div>
-
-        </div>
-
-    </header>
-
-
-    <!-- ============================================
-         MAIN CONTENT
-         ============================================ -->
-    <main>
-
-        <!-- ========================================
-             HERO
-             ======================================== -->
-        <section class="hero">
-
-    <video class="hero-video"
-           autoplay
-           muted
-           loop
-           playsinline
-           poster="images/hero/hero.jpg">
-        <source src="video/hero.mp4" type="video/mp4">
-    </video>
-
-    <div class="hero-overlay"></div>
-
-    <div class="hero-content">
-
-        <p class="hero-eyebrow">
-            THE ULTIMATE HALLOWEEN EXPERIENCE
-        </p>
-
-        <h1>
-            ARE YOU BRAVE ENOUGH?
-        </h1>
-
-        <p class="hero-description">
-            Prepare yourself for a night of terrifying
-            attractions, live entertainment and unforgettable
-            Halloween experiences.
-        </p>
-<!--
-        <a href="#tickets" class="hero-button">
-            Book Now
-        </a>
--->
-    </div>
-
-</section>
-
-
-        <!-- ========================================
-             QUICK LINKS
-             ======================================== -->
-        <section class="quick-links">
-
-            <a href="#dates" class="quick-link-card">
-                <span class="card-icon">01</span>
-                <h2>Dates & Times</h2>
-                <p>Plan your night of terror.</p>
-            </a>
-
-            <a href="#explore" class="quick-link-card">
-                <span class="card-icon">02</span>
-                <h2>Explore</h2>
-                <p>Discover everything waiting for you.</p>
-            </a>
-
-            <a href="#stay" class="quick-link-card">
-                <span class="card-icon">03</span>
-                <h2>Scream & Stay</h2>
-                <p>Make a night of it.</p>
-            </a>
-
-            <a href="#groups" class="quick-link-card">
-                <span class="card-icon">04</span>
-                <h2>Group Visits</h2>
-                <p>Bring your crew.</p>
-            </a>
-
-        </section>
-
-
-        <!-- ========================================
-             INTRODUCTION
-             ======================================== -->
-        <section id="experience" class="intro-section">
-
-            <div class="section-heading">
-
-                <p class="eyebrow">
-                    ONE NIGHT. UNLIMITED SCREAMS.
-                </p>
-
-                <h2>
-                    Welcome to the
-                    <span>dark side.</span>
-                </h2>
-
-            </div>
-
-            <div class="intro-content">
-
-                <p>
-                    Leave the ordinary behind and step into an
-                    experience designed to test your courage.
-                </p>
-
-                <p>
-                    With terrifying attractions, live entertainment,
-                    food, drinks and plenty of surprises, there is
-                    something waiting around every corner.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- ========================================
-        DATES & TIMES
-        ======================================== -->
-        <!--
-        <section id="dates" class="dates-section">
-
-            <div class="section-heading">
-
-                <p class="eyebrow">
-                    PLAN YOUR NIGHT
-                </p>
-
-                <h2>
-                    Dates & Times
-                </h2>
-
-                <p>
-                    Choose your night. If you dare.
-                </p>
-
-            </div>
-
-
-            <div class="dates-container">
-
-                <div class="dates-introduction">
-
-                    <p>
-                        The gates open at different times throughout
-                        the Halloween season. Select your date and
-                        prepare for an unforgettable night.
-                    </p>
-
-                    <a href="#tickets" class="text-link">
-                        Book Tickets →
-                    </a>
-
-                </div>
-
-
-                <div class="event-dates">
-
-                    <article class="event-date">
-
-                        <div class="event-date-day">
-                            <span>FRI</span>
-                            <strong>02</strong>
-                            <small>OCT</small>
-                        </div>
-
-                        <div class="event-date-info">
-
-                            <h3>
-                                Opening Night
-                            </h3>
-
-                            <p>
-                                Gates open at 7:00 PM
-                            </p>
-
-                        </div>
-
-                        <div class="event-date-action">
-                            <a href="#tickets">
-                                Tickets →
-                            </a>
-                        </div>
-
-                    </article>
-
-
-                    <article class="event-date">
-
-                        <div class="event-date-day">
-                            <span>SAT</span>
-                            <strong>03</strong>
-                            <small>OCT</small>
-                        </div>
-
-                        <div class="event-date-info">
-
-                            <h3>
-                                Saturday Night
-                            </h3>
-
-                            <p>
-                                Gates open at 6:30 PM
-                            </p>
-
-                        </div>
-
-                        <div class="event-date-action">
-                            <a href="#tickets">
-                                Tickets →
-                            </a>
-                        </div>
-
-                    </article>
-
-
-                    <article class="event-date">
-
-                        <div class="event-date-day">
-                            <span>FRI</span>
-                            <strong>09</strong>
-                            <small>OCT</small>
-                        </div>
-
-                        <div class="event-date-info">
-
-                            <h3>
-                                Friday Night
-                            </h3>
-
-                            <p>
-                                Gates open at 7:00 PM
-                            </p>
-
-                        </div>
-
-                        <div class="event-date-action">
-                            <a href="#tickets">
-                                Tickets →
-                            </a>
-                        </div>
-
-                    </article>
-
-
-                    <article class="event-date">
-
-                        <div class="event-date-day">
-                            <span>SAT</span>
-                            <strong>10</strong>
-                            <small>OCT</small>
-                        </div>
-
-                        <div class="event-date-info">
-
-                            <h3>
-                                Saturday Night
-                            </h3>
-
-                            <p>
-                                Gates open at 6:30 PM
-                            </p>
-
-                        </div>
-
-                        <div class="event-date-action">
-                            <a href="#tickets">
-                                Tickets →
-                            </a>
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-    -->
-        <section class="dates-section" id="dates">
-
-            <div class="dates-container">
-
-                <div class="dates-introduction">
-
-                    <p class="eyebrow">2026 Season</p>
-
-                    <h2>
-                        The<br>
-                        Darkness<br>
-                        Returns
-                    </h2>
-
-                    <p>
-                        October belongs to the darkness. Join us every Friday
-                        and Saturday night for terrifying attractions,
-                        unexpected scares and a night you won't forget.
-                    </p>
-
-                    <a href="pages/tickets.html" class="text-link">
-                        Get Tickets →
-                    </a>
-
-                </div>
-
-
-                <div class="event-dates">
-
-                    <div class="event-date">
-
-                        <div class="event-date-day">
-                            <span>EVERY</span>
-                            <strong>FRI</strong>
-                            <small>OCTOBER</small>
-                        </div>
-
-                        <div class="event-date-info">
-                            <h3>Friday Nights</h3>
-                            <p>
-                                Fear the Corn Haunted Trail &amp;
-                                Inflatable Maze at Buckland Haunted Farm
-                            </p>
-                        </div>
-
-                        <div class="event-date-action">
-                            <span>7–11 PM</span>
-                        </div>
-
-                    </div>
-
-
-                    <div class="event-date">
-
-                        <div class="event-date-day">
-                            <span>EVERY</span>
-                            <strong>SAT</strong>
-                            <small>OCTOBER</small>
-                        </div>
-
-                        <div class="event-date-info">
-                            <h3>Saturday Nights</h3>
-                            <p>
-                                Fear the Corn Haunted Trail &amp;
-                                Inflatable Maze at Buckland Haunted Farm
-                            </p>
-                        </div>
-
-                        <div class="event-date-action">
-                            <span>7–11 PM</span>
-                        </div>
-
-                    </div>
-
-
-                    <div class="event-date">
-
-                        <div class="event-date-day">
-                            <span>LAST TICKET</span>
-                            <strong>10:30</strong>
-                            <small>PM</small>
-                        </div>
-
-                        <div class="event-date-info">
-                            <h3>Plan Your Night</h3>
-                            <p>
-                                The farm closes at 11 PM. Make sure you arrive
-                                in time to experience both attractions.
-                            </p>
-                        </div>
-
-                        <div class="event-date-action">
-                            <a href="pages/tickets.html">
-                                Tickets →
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ========================================
-             ATTRACTIONS
-             ======================================== -->
-        <section id="attractions" class="attractions-section">
-
-            <div class="section-heading">
-
-                <p class="eyebrow">
-                    CHOOSE YOUR FEAR
-                </p>
-
-                <h2>
-                    What Awaits You
-                </h2>
-
-                <p>
-                    Two experiences. One unforgettable night.
-                </p>
-
-            </div>
-
-
-            <div class="attractions-grid">
-
-
-                <!-- ========================================
-             FEAR THE CORN
-             ======================================== -->
-
-                <article class="attraction-card attraction-card-large">
-
-                    <div class="attraction-image">
-
-                        <img src="images/attractions/fear-the-corn/corn-path.jpg" alt="Fear the Corn haunted trail">
-
-                        <div class="attraction-number">
-                            01
-                        </div>
-
-                    </div>
-
-
-                    <div class="attraction-content">
-
-                        <p class="eyebrow">
-                            HAUNTED TRAIL
-                        </p>
-
-                        <h3>
-                            Fear the Corn
-                        </h3>
-
-                        <p>
-                            Enter the darkness and make your way through
-                            a half-mile haunted trail filled with terrifying
-                            scenes, unexpected encounters and things that
-                            should never be hiding in a cornfield.
-                        </p>
-
-                        <a href="pages/attractions.html" class="text-link">
-                            Explore Fear the Corn →
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <!-- ========================================
-             INFLATABLE MAZE
-             ======================================== -->
-
-                <article class="attraction-card attraction-card-large">
-
-                    <div class="attraction-image">
-
-                        <img src="images/atmosphere/neon-hall.jpg"
-                            alt="Inflatable maze at Buckland Haunted Farm">
-
-                        <div class="attraction-number">
-                            02
-                        </div>
-
-                    </div>
-
-
-                    <div class="attraction-content">
-
-                        <p class="eyebrow">
-                            THE MAZE
-                        </p>
-
-                        <h3>
-                            Inflatable Maze
-                        </h3>
-
-                        <p>
-                            Find your way through a dark maze where dead
-                            ends, unexpected turns and things lurking in
-                            the darkness are waiting for you.
-                        </p>
-
-                        <a href="pages/attractions.html#maze" class="text-link">
-                            Explore the Maze →
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- ========================================
-             TICKETS CTA
-             ======================================== -->
-        <section id="tickets" class="tickets-section">
-
-            <div class="tickets-content">
-
-                <p class="eyebrow">
-                    FEAR THE CORN
-                </p>
-
-                <h2>
-                    Are you ready
-                    to get scared?
-                </h2>
-
-                <p>
-                    Join us every Friday and Saturday night in October
-                    from 7–11 PM. The last ticket is sold at 10:30 PM.
-                    Come experience Fear the Corn and the Inflatable Maze
-                    at Buckland Haunted Farm.
-                </p>
-
-                <a href="#" class="hero-button">
-                    Get Your Tickets
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- ========================================
-     TESTIMONIALS
-     ======================================== -->
-<section class="testimonials-section">
-
-    <div class="section-heading">
-
-        <p class="eyebrow">
-            DON'T TAKE OUR WORD FOR IT
-        </p>
-
-        <h2>
-            What people are saying
-        </h2>
-
-    </div>
-
-
-    <div class="testimonials-slider">
-
-    <article class="testimonial testimonial-active">
-         <div class="testimonial-stars">
-                ★★★★★
-            </div>
-        <blockquote>
-            “Great actors, great trail that even had me jumping
-            and overall a great atmosphere. We spent our entire
-            30 minute ride home talking about our favorite parts
-            and laughing at each other for being scared.”
-        </blockquote>
-
-        <p class="testimonial-author">
-            — Melissa
-            <span>Google Review</span>
-        </p>
-    </article>
-
-
-    <article class="testimonial">
-     <div class="testimonial-stars">
-                ★★★★★
-            </div>
-        <blockquote>
-            “Great set up and some good scares. Food, snacks,
-            ice cream, bonfire, and scary people. What a perfect
-            fall night. Highly recommend for a fun night out.”
-        </blockquote>
-
-        <p class="testimonial-author">
-            — Brian
-            <span>Google Review</span>
-        </p>
-    </article>
-
-
-    <article class="testimonial">
-         <div class="testimonial-stars">
-                ★★★★★
-            </div>
-        <blockquote>
-            “Great set design and costumes - such a fun walkthrough!
-            They have a glow stick for any kids who might get scared,
-            so that none of the actors jump out at them. Everyone
-            was fantastic!”
-        </blockquote>
-
-        <p class="testimonial-author">
-            — Marina
-            <span>Google Review</span>
-        </p>
-    </article>
-
-</div>
-
-    <div class="testimonials-link">
-
-        <a href="https://www.google.com/maps/place/Buckland+Haunted+Farm"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="text-link">
-            Read more Google reviews →
-        </a>
-
-    </div>
-
-</section>
-
-
-        <!-- ========================================
-             LOCATION
-             ======================================== -->
-        <section id="contact" class="location-section">
-
-            <div class="location-content">
-
-                <p class="eyebrow">
-                    FIND US
-                </p>
-
-                <h2>
-                    #Fear The Farm.
-                </h2>
-
-                <p>
-                    Our terrifying experience awaits.
-                </p>
-
-                <address>
-                    4484 Lee Highway<br>
-                    Warrenton<br>
-                    VA
-                </address>
-
-                <a href="#" class="text-link">
-                    Get Directions →
-                </a>
-
-            </div>
-
-
-            <div class="map-placeholder">
-                <span>MAP</span>
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- ============================================
-         FOOTER
-         ============================================ -->
-    <footer>
-
-        <div class="footer-main">
-
-            <div class="footer-brand">
-                <a href="index.html" class="logo">
-                    Buckland Haunted Farm
-                </a>
-
-                <p>
-                    The ultimate Halloween experience.
-                </p>
-            </div>
-
-
-            <div class="footer-column">
-
-                <h3>Experience</h3>
-
-                <a href="#attractions">Attractions</a>
-                <a href="#experience">Explore</a>
-                <a href="#dates">Dates & Times</a>
-                <a href="#stay">Scream & Stay</a>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h3>Groups</h3>
-
-                <a href="#groups">Group Visits</a>
-                <a href="#">Sponsors</a>
-                <a href="#">Press</a>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h3>Follow Us</h3>
-
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">YouTube</a>
-
-            </div>
-
-        </div>
-
-
-        <div class="footer-bottom">
-
-            <p>
-                © 2026 Buckland Haunted Farm. All rights reserved.
+            <p class="hero-eyebrow">
+                BUCKLAND HAUNTED FARM
             </p>
 
-            <div>
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Cookies</a>
+            <h1>
+                ARE YOU<br>
+                BRAVE ENOUGH?
+            </h1>
+
+            <p class="hero-description">
+                Fear the Corn Haunted Trail and the Inflatable Maze
+                return every Friday and Saturday night in October.
+            </p>
+
+            <a href="#dates" class="season-button">
+                2026 Season →
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         CHOOSE YOUR EXPERIENCE
+         ======================================== -->
+
+    <section id="explore" class="quick-links">
+
+        <a href="#haunted-trail" class="quick-link-card">
+
+            <span class="card-icon">
+                01
+            </span>
+
+            <h2>
+                Haunted Trail
+            </h2>
+
+            <p>
+                A half-mile journey through the corn,
+                filled with ghosts, ghouls and the grotesque.
+            </p>
+
+            <span class="card-link">
+                Enter the trail →
+            </span>
+
+        </a>
+
+
+        <a href="#inflatable-maze" class="quick-link-card">
+
+            <span class="card-icon">
+                02
+            </span>
+
+            <h2>
+                Inflatable Maze
+            </h2>
+
+            <p>
+                Dark corners, dead ends and creatures
+                waiting for you to find your way out.
+            </p>
+
+            <span class="card-link">
+                Enter the maze →
+            </span>
+
+        </a>
+
+    </section>
+
+
+
+    <!-- ========================================
+         FEAR THE CORN
+         ======================================== -->
+
+    <section id="experience" class="intro-section">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                BUCKLAND HAUNTED FARM
+            </p>
+
+            <h2>
+                Fear the
+                <span>corn.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="intro-content">
+
+            <p>
+                When the sun goes down, Buckland Farm
+                takes on a whole new life.
+            </p>
+
+            <p>
+                Step into the corn and encounter ghosts,
+                ghouls and the grotesque as you make your
+                way through Warrenton's haunted farm.
+            </p>
+
+            <p>
+                Whether you take on the Haunted Trail or
+                test your courage in the Inflatable Maze,
+                there's only one question left to answer:
+            </p>
+
+            <p class="intro-question">
+                Are you brave enough?
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         2026 SEASON
+         ======================================== -->
+
+    <section class="dates-section" id="dates">
+
+        <div class="dates-container">
+
+            <div class="dates-introduction">
+
+                <p class="eyebrow">
+                    2026 SEASON
+                </p>
+
+                <h2>
+                    The<br>
+                    Darkness<br>
+                    Returns
+                </h2>
+
+                <p>
+                    October belongs to the darkness.
+                    Join us every Friday and Saturday night
+                    in October for terrifying attractions,
+                    unexpected scares and a night you won't forget.
+                </p>
+
+                <a href="#visit" class="text-link">
+                    Plan Your Visit →
+                </a>
+
+            </div>
+
+
+            <div class="event-dates">
+
+
+                <div class="event-date">
+
+                    <div class="event-date-day">
+
+                        <span>
+                            EVERY
+                        </span>
+
+                        <strong>
+                            FRI
+                        </strong>
+
+                        <small>
+                            OCTOBER
+                        </small>
+
+                    </div>
+
+
+                    <div class="event-date-info">
+
+                        <h3>
+                            Friday Nights
+                        </h3>
+
+                        <p>
+                            Fear the Corn Haunted Trail &amp;
+                            Inflatable Maze at Buckland Haunted Farm.
+                        </p>
+
+                    </div>
+
+
+                    <div class="event-date-action">
+
+                        <span>
+                            7–11 PM
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="event-date">
+
+                    <div class="event-date-day">
+
+                        <span>
+                            EVERY
+                        </span>
+
+                        <strong>
+                            SAT
+                        </strong>
+
+                        <small>
+                            OCTOBER
+                        </small>
+
+                    </div>
+
+
+                    <div class="event-date-info">
+
+                        <h3>
+                            Saturday Nights
+                        </h3>
+
+                        <p>
+                            Fear the Corn Haunted Trail &amp;
+                            Inflatable Maze at Buckland Haunted Farm.
+                        </p>
+
+                    </div>
+
+
+                    <div class="event-date-action">
+
+                        <span>
+                            7–11 PM
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="event-date">
+
+                    <div class="event-date-day">
+
+                        <span>
+                            LAST TICKET
+                        </span>
+
+                        <strong>
+                            10:30
+                        </strong>
+
+                        <small>
+                            PM
+                        </small>
+
+                    </div>
+
+
+                    <div class="event-date-info">
+
+                        <h3>
+                            Plan Your Night
+                        </h3>
+
+                        <p>
+                            The Haunted Trail and Inflatable Maze
+                            are open every Friday and Saturday night
+                            in October. Last ticket is sold at 10:30 PM.
+                        </p>
+
+                    </div>
+
+
+                    <div class="event-date-action">
+
+                        <a href="#visit" class="text-link">
+                            Plan Your Visit →
+                        </a>
+
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
 
-    </footer>
+    </section>
 
-    <script src="js/events.js"></script>
-    <script src="js/navigation.js"></script>
+
+
+    <!-- ========================================
+         ATTRACTIONS
+         ======================================== -->
+
+    <section id="attractions" class="attractions-section">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                FEAR THE CORN
+            </p>
+
+            <h2>
+                Choose Your
+                <span>Experience.</span>
+            </h2>
+
+            <p>
+                Two ways to enter the darkness at Buckland Haunted Farm.
+            </p>
+
+        </div>
+
+
+        <div class="attractions-grid">
+
+
+            <!-- HAUNTED TRAIL -->
+
+            <article id="haunted-trail"
+                class="attraction-card attraction-card-large">
+
+                <div class="attraction-image">
+
+                    <img src="images/attractions/fear-the-corn/corn-path.jpg"
+                        alt="Fear the Corn haunted trail">
+
+                    <div class="attraction-number">
+                        01
+                    </div>
+
+                </div>
+
+
+                <div class="attraction-content">
+
+                    <p class="eyebrow">
+                        THE HAUNTED TRAIL
+                    </p>
+
+                    <h3>
+                        Half a Mile
+                        <span>of Terror.</span>
+                    </h3>
+
+                    <p>
+                        Enter the corn and make your way through
+                        a half-mile outdoor trail filled with
+                        terrifying scenes, unexpected encounters
+                        and creatures waiting in the darkness.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- INFLATABLE MAZE -->
+
+            <article id="inflatable-maze"
+                class="attraction-card attraction-card-large">
+
+                <div class="attraction-image">
+
+                    <img src="images/atmosphere/graveyard.jpg"
+                        alt="Inflatable maze at Buckland Haunted Farm">
+
+                    <div class="attraction-number">
+                        02
+                    </div>
+
+                </div>
+
+
+                <div class="attraction-content">
+
+                    <p class="eyebrow">
+                        THE INFLATABLE MAZE
+                    </p>
+
+                    <h3>
+                        Can You
+                        <span>Escape?</span>
+                    </h3>
+
+                    <p>
+                        Dark corners. Dead ends. Creatures lurking
+                        in the shadows. Find your way through the
+                        maze and make it out the other side.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         HAUNTED TRAIL GALLERY
+         ======================================== -->
+
+    <section class="trail-gallery">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                INSIDE THE DARKNESS
+            </p>
+
+            <h2>
+                There's nowhere
+                <span>to hide.</span>
+            </h2>
+
+            <p>
+                Step into the corn and discover what waits
+                for you in the darkness.
+            </p>
+
+        </div>
+
+
+        <div class="trail-gallery-grid">
+
+            <div class="trail-gallery-item trail-gallery-large">
+
+                <img src="images/attractions/fear-the-corn/corn-at-dusk.jpg"
+                    alt="Buckland Haunted Farm cornfield at dusk">
+
+            </div>
+
+
+            <div class="trail-gallery-item">
+
+                <img src="images/gallery/haunted-bus.jpg"
+                    alt="Haunted bus at Buckland Haunted Farm">
+
+            </div>
+
+
+            <div class="trail-gallery-item">
+
+                <img src="images/gallery/clown.jpg"
+                    alt="Clown at Buckland Haunted Farm">
+
+            </div>
+
+
+            <div class="trail-gallery-item">
+
+                <img src="images/gallery/creature-emerging.jpg"
+                    alt="Creature emerging from the darkness">
+
+            </div>
+
+
+            <div class="trail-gallery-item trail-gallery-large">
+
+                <img src="images/attractions/fear-the-corn/creature-in-corn.jpg"
+                    alt="Creature in the corn at Buckland Haunted Farm">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         BUCKLAND FARM MARKET
+         ======================================== -->
+
+    <section id="market" class="visit-section">
+
+        <div class="visit-content">
+
+            <p class="eyebrow">
+                BEFORE THE SCARES
+            </p>
+
+            <h2>
+                Make a night
+                <span>of it.</span>
+            </h2>
+
+            <p>
+                Arrive early and explore Buckland Farm Market
+                before the darkness takes over.
+            </p>
+
+            <p>
+                The family-owned market offers fresh produce,
+                baked goods, meat and eggs, jams, plants and
+                other local foods. There's also an ice cream
+                parlor and a brewery and winery at the market.
+            </p>
+
+            <a href="https://www.bucklandfarmmarket.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-link">
+                Visit Buckland Farm Market →
+            </a>
+
+        </div>
+
+
+        <div class="visit-details">
+
+            <!-- TEMPORARY IMAGE
+                 Replace this image later with an actual
+                 Buckland Farm Market photo. -->
+
+            <div class="visit-detail"
+                style="display: block; padding: 0;">
+
+                <img src="images/attractions/fear-the-corn/corn-at-dusk.jpg"
+                    alt="Buckland Farm"
+                    style="width: 100%; height: 450px; object-fit: cover;">
+
+            </div>
+
+
+            <div class="visit-detail">
+
+                <span class="visit-detail-number">
+                    01
+                </span>
+
+                <div>
+
+                    <h3>
+                        Market Hours
+                    </h3>
+
+                    <p>
+                        Sunday through Saturday
+                    </p>
+
+                    <strong>
+                        9 AM – 6 PM
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="visit-detail">
+
+                <span class="visit-detail-number">
+                    02
+                </span>
+
+                <div>
+
+                    <h3>
+                        Same Location
+                    </h3>
+
+                    <p>
+                        4484 Lee Highway
+                        Warrenton, VA 20187
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         GROUPS
+         ======================================== -->
+
+    <section id="groups" class="intro-section">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                BRING YOUR CREW
+            </p>
+
+            <h2>
+                Come
+                <span>together.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="intro-content">
+
+            <p>
+                Haunted attractions are better with friends.
+                Bring your family, coworkers, club or group
+                and make a night of it.
+            </p>
+
+            <p>
+                Plan your visit together, arrive early and
+                experience the Haunted Trail and Inflatable
+                Maze as a group.
+            </p>
+
+            <p class="intro-question">
+                Who's brave enough?
+            </p>
+
+            <a href="#contact" class="text-link">
+                Contact Us →
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         PLAN YOUR VISIT
+         ======================================== -->
+
+    <section id="visit" class="visit-section">
+
+        <div class="visit-content">
+
+            <p class="eyebrow">
+                PLAN YOUR VISIT
+            </p>
+
+            <h2>
+                Make a night
+                <span>of it.</span>
+            </h2>
+
+            <p>
+                The darkness returns every Friday and Saturday
+                night in October. Come prepared for a night of
+                scares, screams and memories you'll be talking
+                about long after you leave.
+            </p>
+
+        </div>
+
+
+        <div class="visit-details">
+
+            <div class="visit-detail">
+
+                <span class="visit-detail-number">
+                    01
+                </span>
+
+                <div>
+
+                    <h3>
+                        When
+                    </h3>
+
+                    <p>
+                        Every Friday &amp; Saturday
+                        in October
+                    </p>
+
+                    <strong>
+                        7 PM – 11 PM
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="visit-detail">
+
+                <span class="visit-detail-number">
+                    02
+                </span>
+
+                <div>
+
+                    <h3>
+                        Last Admission
+                    </h3>
+
+                    <p>
+                        Last ticket sold at
+                    </p>
+
+                    <strong>
+                        10:30 PM
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="visit-detail">
+
+                <span class="visit-detail-number">
+                    03
+                </span>
+
+                <div>
+
+                    <h3>
+                        Experience
+                    </h3>
+
+                    <p>
+                        Experience the Haunted Trail and
+                        Inflatable Maze during your night
+                        at Buckland Haunted Farm.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         TESTIMONIALS
+         ======================================== -->
+
+    <section class="testimonials-section">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                DON'T TAKE OUR WORD FOR IT
+            </p>
+
+            <h2>
+                What people are saying
+            </h2>
+
+        </div>
+
+
+        <div class="testimonials-slider">
+
+
+            <article class="testimonial testimonial-active">
+
+                <div class="testimonial-stars">
+                    ★★★★★
+                </div>
+
+                <blockquote>
+                    “Great actors, great trail that even had me
+                    jumping and overall a great atmosphere. We spent
+                    our entire 30 minute ride home talking about our
+                    favorite parts and laughing at each other for
+                    being scared.”
+                </blockquote>
+
+                <p class="testimonial-author">
+                    — Melissa
+                    <span>Google Review</span>
+                </p>
+
+            </article>
+
+
+
+            <article class="testimonial">
+
+                <div class="testimonial-stars">
+                    ★★★★★
+                </div>
+
+                <blockquote>
+                    “Great set up and some good scares. Food, snacks,
+                    ice cream, bonfire, and scary people. What a
+                    perfect fall night. Highly recommend for a fun
+                    night out.”
+                </blockquote>
+
+                <p class="testimonial-author">
+                    — Brian
+                    <span>Google Review</span>
+                </p>
+
+            </article>
+
+
+
+            <article class="testimonial">
+
+                <div class="testimonial-stars">
+                    ★★★★★
+                </div>
+
+                <blockquote>
+                    “Great set design and costumes - such a fun
+                    walkthrough! They have a glow stick for any
+                    kids who might get scared, so that none of the
+                    actors jump out at them. Everyone was fantastic!”
+                </blockquote>
+
+                <p class="testimonial-author">
+                    — Marina
+                    <span>Google Review</span>
+                </p>
+
+            </article>
+
+        </div>
+
+
+        <div class="testimonials-link">
+
+            <a href="https://www.google.com/maps/place/Buckland+Haunted+Farm"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-link">
+                Read more Google reviews →
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================
+         LOCATION
+         ======================================== -->
+
+    <section id="contact" class="location-section">
+
+        <div class="location-content">
+
+            <p class="eyebrow">
+                FIND US
+            </p>
+
+            <h2>
+                #Fear The Farm.
+            </h2>
+
+            <p>
+                Our terrifying experience awaits.
+            </p>
+
+            <address>
+                4484 Lee Highway<br>
+                Warrenton, VA 20187
+            </address>
+
+            <a href="https://www.google.com/maps/dir/?api=1&destination=4484+Lee+Highway,+Warrenton,+VA+20187"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-link">
+                Get Directions →
+            </a>
+
+        </div>
+
+
+        <div class="map-placeholder">
+
+            <a href="https://www.google.com/maps/dir/?api=1&destination=4484+Lee+Highway,+Warrenton,+VA+20187"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Get directions to Buckland Haunted Farm">
+
+                <span>
+                    GET DIRECTIONS →
+                </span>
+
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+
+<footer>
+
+    <div class="footer-main">
+
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo">
+                Buckland Haunted Farm
+            </a>
+
+            <p>
+                The ultimate Halloween experience.
+            </p>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h3>
+                Experience
+            </h3>
+
+            <a href="#attractions">
+                Attractions
+            </a>
+
+            <a href="#dates">
+                2026 Season
+            </a>
+
+            <a href="#market">
+                Farm Market
+            </a>
+
+            <a href="#visit">
+                Plan Your Visit
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h3>
+                Visit
+            </h3>
+
+            <a href="#groups">
+                Groups
+            </a>
+
+            <a href="#contact">
+                Find Us
+            </a>
+
+            <a href="https://www.bucklandfarmmarket.com/"
+                target="_blank"
+                rel="noopener noreferrer">
+                Buckland Farm Market
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+             <h3>Follow Us</h3>
+
+    <a href="https://www.facebook.com/BucklandHauntFarm"
+       target="_blank"
+       rel="noopener noreferrer">
+        Facebook
+    </a>
+
+    <a href="https://www.instagram.com/BucklandHauntedFarm"
+       target="_blank"
+       rel="noopener noreferrer">
+        Instagram
+    </a>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Buckland Haunted Farm. All rights reserved.
+        </p>
+
+        <div>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+            <a href="#visit">
+                Plan Your Visit
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<script src="js/events.js"></script>
+<script src="js/navigation.js"></script>
+```
 
 </body>
 

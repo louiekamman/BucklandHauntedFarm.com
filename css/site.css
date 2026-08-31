@@ -1,4 +1,10 @@
 /* =========================================================
+   BUCKLAND HAUNTED FARM
+   SITE STYLES
+   ========================================================= */
+
+
+/* =========================================================
    RESET
    ========================================================= */
 
@@ -17,6 +23,7 @@ body {
     color: #f2f2f2;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 img {
@@ -36,7 +43,7 @@ a {
 
 
 /* =========================================================
-   GLOBAL
+   GLOBAL VARIABLES
    ========================================================= */
 
 :root {
@@ -55,14 +62,7 @@ a {
     --max-width: 1400px;
 }
 
-body {
-    overflow-x: hidden;
-}
-
-main {
-    width: 100%;
-}
-
+main,
 section {
     width: 100%;
 }
@@ -88,7 +88,7 @@ section {
     text-transform: uppercase;
 }
 
-.section-heading>p:last-child {
+.section-heading > p:last-child {
     color: var(--text-muted);
     margin-top: 20px;
 }
@@ -116,7 +116,6 @@ section {
 
 .main-navigation {
     height: 90px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -124,7 +123,6 @@ section {
     padding: 0 40px;
 
     background: rgba(8, 8, 8, 0.95);
-
     border-bottom: 1px solid var(--border);
 
     position: relative;
@@ -145,10 +143,8 @@ section {
 
 .nav-links a {
     color: var(--text-muted);
-
     font-size: 0.8rem;
     font-weight: 700;
-
     text-transform: uppercase;
     letter-spacing: 0.08em;
 
@@ -159,8 +155,24 @@ section {
     color: var(--text);
 }
 
-.book-button,
-.hero-button {
+
+/* =========================================================
+   NAVIGATION ACTIONS
+   ========================================================= */
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.visit-button,
+.season-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -181,22 +193,11 @@ section {
         transform 0.25s ease;
 }
 
-.book-button:hover,
-.hero-button:hover {
+.visit-button:hover,
+.season-button:hover {
     background: var(--accent-dark);
     transform: translateY(-2px);
 }
-
-/* =========================================================
-   NAVIGATION ACTIONS
-   ========================================================= */
-
-.nav-actions {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
 
 /* =========================================================
    MOBILE MENU BUTTON
@@ -215,7 +216,6 @@ section {
     gap: 5px;
 
     background: transparent;
-
     border: 1px solid var(--border);
 
     cursor: pointer;
@@ -239,7 +239,6 @@ section {
 
 .mobile-menu {
     position: fixed;
-
     inset: 0;
 
     z-index: 90;
@@ -247,7 +246,6 @@ section {
     background: #050505;
 
     opacity: 0;
-
     visibility: hidden;
 
     transform: translateY(-20px);
@@ -262,9 +260,7 @@ section {
 
 .mobile-menu.is-open {
     opacity: 1;
-
     visibility: visible;
-
     transform: translateY(0);
 }
 
@@ -281,11 +277,9 @@ section {
     color: var(--accent);
 
     font-size: 0.7rem;
-
     font-weight: 800;
 
     text-transform: uppercase;
-
     letter-spacing: 0.2em;
 
     margin-bottom: 30px;
@@ -293,7 +287,6 @@ section {
 
 .mobile-menu nav {
     display: flex;
-
     flex-direction: column;
 }
 
@@ -303,13 +296,11 @@ section {
     border-bottom: 1px solid var(--border);
 
     font-size: clamp(2rem, 8vw, 4rem);
-
     line-height: 1;
 
     font-weight: 800;
 
     text-transform: uppercase;
-
     letter-spacing: -0.03em;
 
     transition: color 0.2s ease;
@@ -319,24 +310,20 @@ section {
     color: var(--accent);
 }
 
-.mobile-book-button {
+.mobile-visit-button {
     display: inline-flex;
-
     align-items: center;
     justify-content: center;
 
     margin-top: 40px;
-
     padding: 18px 25px;
 
     background: var(--accent);
 
     font-size: 0.8rem;
-
     font-weight: 800;
 
     text-transform: uppercase;
-
     letter-spacing: 0.1em;
 }
 
@@ -357,9 +344,6 @@ section {
     transform: translateY(-7px) rotate(-45deg);
 }
 
-
-/* Prevent background page scrolling */
-
 body.menu-open {
     overflow: hidden;
 }
@@ -376,7 +360,6 @@ body.menu-open {
     align-items: center;
 
     position: relative;
-
     overflow: hidden;
 
     background: #000;
@@ -384,7 +367,6 @@ body.menu-open {
 
 .hero-video {
     position: absolute;
-
     inset: 0;
 
     width: 100%;
@@ -398,7 +380,6 @@ body.menu-open {
 
 .hero-overlay {
     position: absolute;
-
     inset: 0;
 
     z-index: 1;
@@ -412,18 +393,11 @@ body.menu-open {
         );
 }
 
-
-/*
-    Decorative background effect.
-    We'll replace this with a real image later.
-*/
-
 .hero-content {
     width: 100%;
     max-width: var(--max-width);
 
     margin: 0 auto;
-
     padding: 80px 40px;
 
     position: relative;
@@ -465,7 +439,7 @@ body.menu-open {
     font-size: 1.1rem;
 }
 
-.hero-button {
+.season-button {
     margin-top: 35px;
 }
 
@@ -480,16 +454,17 @@ body.menu-open {
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-columns: repeat(2, 1fr);
 
     border-left: 1px solid var(--border);
     border-top: 1px solid var(--border);
 }
 
 .quick-link-card {
-    min-height: 220px;
+    min-height: 320px;
 
-    padding: 35px;
+    padding: 45px;
 
     display: flex;
     flex-direction: column;
@@ -520,7 +495,7 @@ body.menu-open {
 }
 
 .quick-link-card h2 {
-    font-size: 1.4rem;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
 
     text-transform: uppercase;
 
@@ -531,6 +506,19 @@ body.menu-open {
     color: var(--text-muted);
 
     font-size: 0.9rem;
+}
+
+.quick-link-card .card-link {
+    margin-top: 25px;
+
+    color: var(--accent);
+
+    font-size: 0.75rem;
+    font-weight: 800;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
 }
 
 
@@ -546,6 +534,7 @@ body.menu-open {
     padding: 160px 40px;
 
     display: grid;
+
     grid-template-columns: 1fr 1fr;
 
     gap: 80px;
@@ -574,139 +563,22 @@ body.menu-open {
     margin-bottom: 25px;
 }
 
-
-/* =========================================================
-   ATTRACTIONS
-   ========================================================= */
-
-/*
-.attractions-section {
-    background: var(--background-light);
-
-    padding: 140px 0;
-}
-
-.attraction-grid {
-    max-width: var(--max-width);
-
-    margin: 0 auto;
-
-    padding: 0 40px;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 30px;
-}
-
-.attraction-card {
-    background: var(--background);
-
-    border: 1px solid var(--border);
-
-    overflow: hidden;
-
-    transition:
-        transform 0.3s ease,
-        border-color 0.3s ease;
-}
-
-.attraction-card:hover {
-    transform: translateY(-8px);
-
-    border-color: #444444;
-}
-
-.attraction-card:hover {
-    transform: translateY(-8px);
-}
-
-.attraction-card:hover .attraction-image img {
-    transform: scale(1.08);
-}
-
-.attraction-image {
-    height: 450px;
-
-    position: relative;
-
-    overflow: hidden;
-
-    background: #111111;
-}
-
-.attraction-image::after {
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background:
-        linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0.05),
-            rgba(0, 0, 0, 0.75)
-        );
-
-    pointer-events: none;
-}
-
-.attraction-image img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    transition:
-        transform 0.6s ease;
-}
-
-.attraction-content {
-    padding: 40px;
-
-    position: relative;
-}
-
-.attraction-number {
+.intro-question {
     color: var(--accent);
 
-    font-size: 0.75rem;
+    font-size: 1.5rem !important;
     font-weight: 800;
 
-    margin-bottom: 10px;
-}
-
-.attraction-content h3 {
-    font-size: clamp(1.7rem, 3vw, 2.4rem);
-
-    line-height: 1;
+    letter-spacing: 0.04em;
 
     text-transform: uppercase;
 
-    margin-bottom: 15px;
-}
-
-.attraction-content p {
-    color: var(--text-muted);
-
-    margin-bottom: 25px;
-}
-
-.attraction-content a,
-.text-link {
-    color: var(--accent);
-
-    font-size: 0.8rem;
-    font-weight: 800;
-
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+    margin-top: 35px;
 }
 
 
 /* =========================================================
-   DATES & TIMES
+   SEASON DATES
    ========================================================= */
 
 .dates-section {
@@ -775,7 +647,6 @@ body.menu-open {
     color: var(--accent);
 
     font-size: 0.7rem;
-
     font-weight: 800;
 
     letter-spacing: 0.15em;
@@ -795,7 +666,6 @@ body.menu-open {
     color: var(--text-muted);
 
     font-size: 0.65rem;
-
     font-weight: 700;
 
     margin-top: 5px;
@@ -815,18 +685,19 @@ body.menu-open {
     font-size: 0.9rem;
 }
 
-.event-date-action a {
+.event-date-action {
+    white-space: nowrap;
+}
+
+.event-date-action span {
     color: var(--accent);
 
     font-size: 0.75rem;
-
     font-weight: 800;
 
     text-transform: uppercase;
 
     letter-spacing: 0.1em;
-
-    white-space: nowrap;
 }
 
 .event-date:hover .event-date-info h3 {
@@ -835,47 +706,306 @@ body.menu-open {
 
 
 /* =========================================================
-   TICKETS
+   FEATURED ATTRACTIONS
    ========================================================= */
 
-.tickets-section {
-    min-height: 600px;
+.attractions-section {
+    padding: 140px 0;
 
+    background: var(--background-light);
+}
+
+.attractions-grid {
+    max-width: var(--max-width);
+
+    margin: 0 auto;
+
+    padding: 0 40px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.attraction-card-large {
     display: flex;
-    align-items: center;
-    justify-content: center;
 
-    text-align: center;
+    flex-direction: column;
 
-    padding: 100px 40px;
+    min-height: 700px;
+
+    background: var(--background);
+
+    border: 1px solid var(--border);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.attraction-card-large:hover {
+    transform: translateY(-8px);
+
+    border-color: #444444;
+}
+
+.attraction-card-large .attraction-image {
+    height: 500px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #111111;
+}
+
+.attraction-card-large .attraction-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
 
     background:
-        radial-gradient(circle at center,
-            rgba(255, 75, 22, 0.18),
-            transparent 55%),
-        #050505;
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.05),
+            rgba(0, 0, 0, 0.75)
+        );
+
+    pointer-events: none;
 }
 
-.tickets-content {
-    max-width: 800px;
+.attraction-card-large .attraction-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
 }
 
-.tickets-content h2 {
-    font-size: clamp(3rem, 7vw, 6rem);
+.attraction-card-large:hover .attraction-image img {
+    transform: scale(1.05);
+}
 
-    line-height: 0.9;
+.attraction-number {
+    position: absolute;
+
+    top: 25px;
+    left: 25px;
+
+    z-index: 2;
+
+    font-size: 0.75rem;
+    font-weight: 800;
+
+    letter-spacing: 0.1em;
+
+    color: white;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    padding: 10px 13px;
+}
+
+.attraction-card-large .attraction-content {
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 40px;
+}
+
+.attraction-card-large .attraction-content h3 {
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+
+    line-height: 1;
+
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+}
+
+.attraction-card-large .attraction-content h3 span {
+    color: var(--accent);
+}
+
+.attraction-card-large .attraction-content p:not(.eyebrow) {
+    max-width: 500px;
+
+    color: var(--text-muted);
+
+    margin-bottom: 30px;
+}
+
+.attraction-card-large .text-link {
+    margin-top: auto;
+
+    color: var(--accent);
+
+    font-size: 0.8rem;
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.1em;
+}
+
+
+/* =========================================================
+   HAUNTED TRAIL GALLERY
+   ========================================================= */
+
+.trail-gallery {
+    padding: 140px 0;
+
+    background: var(--background);
+}
+
+.trail-gallery-grid {
+    max-width: var(--max-width);
+
+    margin: 0 auto;
+
+    padding: 0 40px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-auto-rows: 300px;
+
+    gap: 20px;
+}
+
+.trail-gallery-item {
+    position: relative;
+
+    overflow: hidden;
+
+    background: var(--background-light);
+}
+
+.trail-gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.trail-gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.trail-gallery-large {
+    grid-row: span 2;
+}
+
+
+/* =========================================================
+   PLAN YOUR VISIT
+   ========================================================= */
+
+.visit-section {
+    max-width: var(--max-width);
+
+    margin: 0 auto;
+
+    padding: 140px 40px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+}
+
+.visit-content {
+    align-self: center;
+
+    max-width: 550px;
+}
+
+.visit-content h2 {
+    font-size: clamp(3rem, 6vw, 5rem);
+
+    line-height: 0.95;
 
     text-transform: uppercase;
 
     margin-bottom: 30px;
 }
 
-.tickets-content p {
+.visit-content h2 span {
+    color: var(--accent);
+}
+
+.visit-content > p:last-child {
     color: var(--text-muted);
 
-    max-width: 550px;
+    font-size: 1.1rem;
 
-    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.visit-details {
+    border-top: 1px solid var(--border);
+}
+
+.visit-detail {
+    display: grid;
+
+    grid-template-columns: 50px 1fr;
+
+    gap: 25px;
+
+    padding: 30px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.visit-detail-number {
+    color: var(--accent);
+
+    font-size: 0.75rem;
+    font-weight: 800;
+
+    letter-spacing: 0.08em;
+}
+
+.visit-detail h3 {
+    margin-bottom: 8px;
+
+    font-size: 1.2rem;
+
+    text-transform: uppercase;
+}
+
+.visit-detail p {
+    color: var(--text-muted);
+
+    margin-bottom: 8px;
+}
+
+.visit-detail strong {
+    color: var(--text);
+
+    font-size: 1rem;
 }
 
 
@@ -891,12 +1021,26 @@ body.menu-open {
     padding: 150px 40px;
 }
 
+.testimonials-slider {
+    position: relative;
+}
+
 .testimonial {
     max-width: 950px;
 
     margin: 0 auto;
 
     text-align: center;
+}
+
+.testimonial-stars {
+    color: var(--accent);
+
+    font-size: 1rem;
+
+    letter-spacing: 0.15em;
+
+    margin-bottom: 30px;
 }
 
 .testimonial blockquote {
@@ -907,12 +1051,24 @@ body.menu-open {
     font-weight: 700;
 }
 
-.testimonial p {
+.testimonial-author {
     color: var(--accent);
 
     margin-top: 30px;
 
     font-weight: 700;
+}
+
+.testimonial-author span {
+    display: block;
+
+    color: var(--text-muted);
+
+    font-size: 0.75rem;
+
+    font-weight: 400;
+
+    margin-top: 5px;
 }
 
 
@@ -928,6 +1084,7 @@ body.menu-open {
     padding: 100px 40px 150px;
 
     display: grid;
+
     grid-template-columns: 1fr 1fr;
 
     gap: 50px;
@@ -947,7 +1104,7 @@ body.menu-open {
     margin-bottom: 25px;
 }
 
-.location-content>p {
+.location-content > p {
     color: var(--text-muted);
 
     margin-bottom: 30px;
@@ -965,6 +1122,7 @@ body.menu-open {
     min-height: 450px;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
@@ -996,6 +1154,7 @@ footer {
     padding: 80px 40px;
 
     display: grid;
+
     grid-template-columns: 2fr repeat(3, 1fr);
 
     gap: 50px;
@@ -1011,6 +1170,7 @@ footer {
 
 .footer-column {
     display: flex;
+
     flex-direction: column;
 
     gap: 10px;
@@ -1020,7 +1180,6 @@ footer {
     color: var(--accent);
 
     font-size: 0.75rem;
-
     text-transform: uppercase;
 
     letter-spacing: 0.12em;
@@ -1048,6 +1207,7 @@ footer {
     padding: 25px 40px;
 
     display: flex;
+
     justify-content: space-between;
 
     border-top: 1px solid var(--border);
@@ -1059,6 +1219,7 @@ footer {
 
 .footer-bottom div {
     display: flex;
+
     gap: 20px;
 }
 
@@ -1068,6 +1229,10 @@ footer {
    ========================================================= */
 
 @media (max-width: 1000px) {
+
+    .main-navigation {
+        padding: 0 25px;
+    }
 
     .nav-links {
         gap: 18px;
@@ -1083,13 +1248,27 @@ footer {
 
     .intro-section {
         grid-template-columns: 1fr;
+
         gap: 40px;
+    }
+
+    .dates-container {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .attractions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .visit-section {
+        gap: 60px;
     }
 
     .footer-main {
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
 
@@ -1099,19 +1278,101 @@ footer {
 
 @media (max-width: 700px) {
 
-    .attractions-grid {
-        grid-template-columns: 1fr;
+    /* -----------------------------------------
+       PROMO
+       ----------------------------------------- */
+
+    .promo-bar {
+        font-size: 0.65rem;
+    }
+
+
+    /* -----------------------------------------
+       NAVIGATION
+       ----------------------------------------- */
+
+    .main-navigation {
+        height: 75px;
 
         padding: 0 20px;
     }
 
-    .attraction-card-large {
-        min-height: auto;
+    .nav-links {
+        display: none;
     }
 
-    .attraction-card-large .attraction-image {
-        height: 400px;
+    .nav-actions {
+        gap: 10px;
     }
+
+    .menu-button {
+        display: flex;
+    }
+
+    .logo {
+        font-size: 1.7rem;
+    }
+
+
+    /* -----------------------------------------
+       HERO
+       ----------------------------------------- */
+
+    .hero {
+        min-height: 650px;
+    }
+
+    .hero-content {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: clamp(3.5rem, 17vw, 6rem);
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+
+    /* -----------------------------------------
+       SECTION HEADINGS
+       ----------------------------------------- */
+
+    .section-heading {
+        padding: 0 20px;
+
+        margin-bottom: 40px;
+    }
+
+
+    /* -----------------------------------------
+       QUICK LINKS
+       ----------------------------------------- */
+
+    .quick-links {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-link-card {
+        min-height: 180px;
+
+        padding: 25px;
+    }
+
+
+    /* -----------------------------------------
+       INTRODUCTION
+       ----------------------------------------- */
+
+    .intro-section {
+        padding: 100px 20px;
+    }
+
+
+    /* -----------------------------------------
+       SEASON DATES
+       ----------------------------------------- */
 
     .dates-section {
         padding: 100px 0;
@@ -1139,103 +1400,90 @@ footer {
         grid-column: 2;
     }
 
-    .event-date-action a {
+    .event-date-action span {
         display: inline-block;
 
         margin-top: -10px;
     }
 
-    .promo-bar {
-        font-size: 0.65rem;
-    }
 
-    .main-navigation {
-        height: 75px;
-
-        padding: 0 20px;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .nav-actions {
-        gap: 10px;
-    }
-
-    .menu-button {
-        display: flex;
-    }
-
-    .logo {
-        font-size: 1.7rem;
-    }
-
-    .book-button {
-        padding: 11px 16px;
-
-        font-size: 0.65rem;
-    }
-
-    .hero {
-        min-height: 650px;
-    }
-
-    .hero-content {
-        padding: 60px 20px;
-    }
-
-    .hero h1 {
-        font-size: clamp(3.5rem, 17vw, 6rem);
-    }
-
-    .hero-description {
-        font-size: 1rem;
-    }
-
-    .section-heading {
-        padding: 0 20px;
-
-        margin-bottom: 40px;
-    }
-
-    .quick-links {
-        grid-template-columns: 1fr;
-    }
-
-    .quick-link-card {
-        min-height: 180px;
-
-        padding: 25px;
-    }
-
-    .intro-section {
-        padding: 100px 20px;
-    }
+    /* -----------------------------------------
+       FEATURED ATTRACTIONS
+       ----------------------------------------- */
 
     .attractions-section {
         padding: 100px 0;
     }
 
-    .attraction-grid {
+    .attractions-grid {
         grid-template-columns: 1fr;
 
         padding: 0 20px;
     }
 
-    .attraction-image {
-        height: 350px;
+    .attraction-card-large {
+        min-height: auto;
     }
 
-    .tickets-section {
-        min-height: 500px;
-
-        padding: 80px 20px;
+    .attraction-card-large .attraction-image {
+        height: 400px;
     }
+
+    .attraction-card-large .attraction-content {
+        padding: 30px 25px;
+    }
+
+
+    /* -----------------------------------------
+       TRAIL GALLERY
+       ----------------------------------------- */
+
+    .trail-gallery {
+        padding: 100px 0;
+    }
+
+    .trail-gallery-grid {
+        grid-template-columns: 1fr;
+
+        grid-auto-rows: 300px;
+
+        padding: 0 20px;
+    }
+
+    .trail-gallery-large {
+        grid-row: span 1;
+    }
+
+
+    /* -----------------------------------------
+       PLAN YOUR VISIT
+       ----------------------------------------- */
+
+    .visit-section {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+
+        padding: 100px 20px;
+    }
+
+    .visit-content h2 {
+        font-size: clamp(3rem, 14vw, 5rem);
+    }
+
+
+    /* -----------------------------------------
+       TESTIMONIALS
+       ----------------------------------------- */
 
     .testimonials-section {
         padding: 100px 20px;
     }
+
+
+    /* -----------------------------------------
+       LOCATION
+       ----------------------------------------- */
 
     .location-section {
         grid-template-columns: 1fr;
@@ -1246,6 +1494,11 @@ footer {
     .map-placeholder {
         min-height: 300px;
     }
+
+
+    /* -----------------------------------------
+       FOOTER
+       ----------------------------------------- */
 
     .footer-main {
         grid-template-columns: 1fr;
@@ -1261,85 +1514,3 @@ footer {
         gap: 15px;
     }
 }
-
-    /* =========================================================
-   FEATURED ATTRACTIONS
-   ========================================================= */
-
-    .attractions-section {
-        padding: 140px 0;
-    }
-
-    .attractions-grid {
-        max-width: var(--max-width);
-
-        margin: 0 auto;
-
-        padding: 0 40px;
-
-        display: grid;
-
-        grid-template-columns: repeat(2, 1fr);
-
-        gap: 25px;
-    }
-
-    .attraction-card-large {
-        display: flex;
-
-        flex-direction: column;
-
-        min-height: 700px;
-    }
-
-    .attraction-card-large .attraction-image {
-        height: 500px;
-    }
-
-    .attraction-number {
-        position: absolute;
-
-        top: 25px;
-        left: 25px;
-
-        z-index: 2;
-
-        font-size: 0.75rem;
-
-        font-weight: 800;
-
-        letter-spacing: 0.1em;
-
-        color: white;
-
-        background: rgba(0, 0, 0, 0.65);
-
-        border: 1px solid rgba(255, 255, 255, 0.25);
-
-        padding: 10px 13px;
-    }
-
-    .attraction-card-large .attraction-content {
-        flex: 1;
-
-        display: flex;
-
-        flex-direction: column;
-
-        align-items: flex-start;
-    }
-
-    .attraction-card-large .attraction-content p:not(.eyebrow) {
-        max-width: 500px;
-
-        color: var(--text-muted);
-
-        margin-bottom: 30px;
-    }
-
-    .attraction-card-large .text-link {
-        margin-top: auto;
-    }
-
-
-
