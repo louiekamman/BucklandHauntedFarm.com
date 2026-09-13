@@ -2034,31 +2034,37 @@ footer {
 
 .dates-section,
 .trail-gallery,
-#testimonials,
+#groups,
+.admission-section,
+.testimonials-section,
 .location-section {
     position: relative;
     isolation: isolate;
     overflow: hidden;
-
     background: #090909;
 }
 
-/* Strong distressed texture */
+
+/* -----------------------------------------
+   DISTRESSED TEXTURE
+   ----------------------------------------- */
+
 .dates-section::before,
 .trail-gallery::before,
-#testimonials::before,
-.testimonials-section::before,
 #groups::before,
+.admission-section::before,
+.testimonials-section::before,
 .location-section::before {
     content: "";
     position: absolute;
     inset: 0;
-
     z-index: -1;
 
     background:
-        linear-gradient(rgba(10, 10, 10, 0.28),
-            rgba(10, 10, 10, 0.42)),
+        linear-gradient(
+            rgba(10, 10, 10, 0.28),
+            rgba(10, 10, 10, 0.42)
+        ),
         url("../images/backgrounds/grunge-darkbrown.jpg");
 
     background-size: cover;
@@ -2066,26 +2072,37 @@ footer {
     background-repeat: repeat;
 
     filter:
-        contrast(1.15) brightness(0.88);
+        contrast(1.15)
+        brightness(0.88);
 
     opacity: 1;
 }
 
-/* Keep section content above the texture */
-.dates-section>*,
-.trail-gallery>*,
-#market>*,
-#testimonials>*,
-.location-section>* {
+
+/* -----------------------------------------
+   KEEP CONTENT ABOVE TEXTURE
+   ----------------------------------------- */
+
+.dates-section > *,
+.trail-gallery > *,
+#groups > *,
+.admission-section > *,
+.testimonials-section > *,
+.location-section > * {
     position: relative;
     z-index: 1;
 }
 
-/* Slightly stronger separation between sections */
+
+/* -----------------------------------------
+   SECTION SEPARATION
+   ----------------------------------------- */
+
 .dates-section,
 .trail-gallery,
-#market,
-#testimonials,
+#groups,
+.admission-section,
+.testimonials-section,
 .location-section {
     box-shadow:
         inset 0 18px 35px rgba(0, 0, 0, 0.45),
